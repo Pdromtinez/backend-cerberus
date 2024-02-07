@@ -29,7 +29,7 @@ export const createPreAccount = async (req, res) => {
 
         await PreAccounts.create({ ...otherData, app_img: { public_id, secure_url } });
         
-        return res.status(200).json({ message: "This User has been added successfully!" });
+        return res.status(200).json({ message: "This account has been added successfully!" });
     } catch (error) {
         console.error('Error in createPreAccount:', error);
         return res.status(500).json({ error: 'Internal Server Error' });

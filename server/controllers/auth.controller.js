@@ -60,7 +60,7 @@ const authController = {
 
     
             const token = createToken({ user});
-            console.log("Generated token:", token);
+            ("Generated token:", token);
 
             res.cookie("token", token, { httpOnly: true });
     

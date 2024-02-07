@@ -8,7 +8,7 @@ export const isAdmin = async (req, res, next) => {
 
         const decodedToken = decodeToken(token);
 
-        console.log(decodedToken);
+        (decodedToken);
 
         req.userId = decodedToken;
 
